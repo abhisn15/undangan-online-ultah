@@ -1,27 +1,28 @@
+@import url("https://fonts.cdnfonts.com/css/poppins");
+
 :root {
-  --pink: #f14e95;
+  --biru-dongker: #131386;
   --bg: #0a0a0a;
   --shadow: 0 2px 2px rgb(0 0 0 / 0.5);
 }
 
 body {
   font-size: 1.2rem;
-  font-family: 'Work Sans', sans-serif;
+  font-family: "Work Sans", sans-serif;
   min-height: 4000px;
 }
 
 .hero::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: url(img/bg-prewed.jpg);
+  background-image: url(img/bg-ultah.jpeg);
   background-size: cover;
   background-position: center;
   z-index: -1;
-  filter: grayscale();
 }
 
 .hero {
@@ -36,7 +37,7 @@ body {
 }
 
 .hero h1 {
-  font-family: 'Sacramento', cursive;
+  font-family: "Sacramento", cursive;
   font-size: 6rem;
 }
 
@@ -48,15 +49,24 @@ body {
   font-size: 1.4rem;
 }
 
+#countdown {
+  font-family: "Poppins", sans-serif;
+  font-size: 22px;
+}
+
 .hero a {
-  color: var(--pink);
-  background-color: white;
+  color: var(--biru-dongker);
+  background-color: rgb(238, 238, 238);
   box-shadow: var(--shadow);
 }
 
 .hero a:hover {
-  background-color: var(--pink);
+  background-color: var(--biru-dongker);
   color: white;
+}
+
+main {
+  margin-top: 100px;
 }
 
 .mynavbar {
@@ -70,13 +80,26 @@ body {
 
 .mynavbar .navbar-brand,
 .mynavbar .offcanvas-title {
-  font-family: 'Sacramento', cursive;
+  font-family: "Sacramento", cursive;
   font-size: 3.2rem;
   font-weight: bold;
 }
 
 .mynavbar .nav-link {
   text-transform: uppercase;
+}
+
+.home::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-image: url(img/bg.png);
+  opacity: 0.5;
+  background-size: cover;
+  background-position: center;
+  z-index: -1;
 }
 
 .home {
@@ -92,59 +115,35 @@ body {
 .info h2,
 .story h2,
 .gallery h2,
-.rsvp h2,
-.gifts h2 {
-  color: var(--pink);
-  font-family: 'Sacramento';
+.kehadiran h2,
+.akhir h2 {
+  color: var(--biru-dongker);
+  font-family: "Sacramento";
   font-size: 5rem;
   font-weight: bold;
 }
 
-.home h3 {
+.abhi h3 {
+  font-family: "Sacramento", cursive;
   color: #444;
-  font-size: 1.5rem;
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.abhi h4 {
+  color: #444;
+  font-size: 1.6rem;
   margin-bottom: 1rem;
 }
 
 .home p {
-  font-size: 1.1rem;
+  font-size: 1.4rem;
   color: #666;
 }
 
-.home .couple {
-  margin-top: 100px;
-}
-
-.home .couple h3 {
-  font-family: 'Sacramento';
-  font-size: 2.4rem;
-  color: var(--pink);
-}
-
-.home .couple img {
-  width: 100%;
-}
-
-.home .heart {
-  width: 50px;
-  height: 50px;
-  background-color: white;
-  display: flex;
-  border-radius: 50%;
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%) translateY(65px);
-}
-
-.home .heart i {
-  margin: auto;
-  color: var(--pink);
-}
-
 .info {
-  background-color: var(--bg);
-  color: white;
+  background-color: #d9d9d9;
+  color: black;
   padding-top: 10rem;
   padding-bottom: 8rem;
 }
@@ -160,7 +159,7 @@ body {
 
 .info .card {
   background-color: rgba(255, 255, 255, 0.2) !important;
-  color: white !important;
+  color: black !important;
   border: 1px solid #999;
 }
 
@@ -182,15 +181,15 @@ body {
 
 .story,
 .gallery,
-.rsvp,
-.gifts {
+.kehadiran,
+.akhir {
   padding-top: 10rem;
   padding-bottom: 8rem;
 }
 
 .story span,
 .gallery span,
-.gifts span {
+.akhir span {
   text-transform: uppercase;
   color: #666;
   font-size: 0.9rem;
@@ -201,10 +200,14 @@ body {
 
 .story p,
 .gallery p,
-.rsvp p,
-.gifts p {
+.kehadiran p,
+.akhir p {
   font-size: 1rem;
   font-weight: 300;
+}
+
+.story {
+  background-color: #d9d9d9;
 }
 
 .timeline {
@@ -215,7 +218,7 @@ body {
 }
 
 .timeline::before {
-  content: '';
+  content: "";
   top: 0;
   bottom: 0;
   position: absolute;
@@ -231,7 +234,7 @@ body {
 
 .timeline li::before,
 .timeline li::after {
-  content: '';
+  content: "";
   display: table;
 }
 
@@ -263,7 +266,7 @@ body {
 }
 
 .timeline li .timeline-panel::before {
-  content: '';
+  content: "";
   display: inline-block;
   position: absolute;
   border-top: 15px solid transparent;
@@ -275,7 +278,7 @@ body {
 }
 
 .timeline li .timeline-panel::after {
-  content: '';
+  content: "";
   position: absolute;
   display: inline-block;
   border-top: 14px solid transparent;
@@ -308,37 +311,57 @@ body {
   background-color: #f5f5f5;
 }
 
-.rsvp {
-  background-color: var(--bg);
+.kehadiran {
+  min-height: 100vh;
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  overflow: hidden;
 }
 
-.rsvp h2 {
-  font-size: 4.5rem;
+.kehadiran::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url(img/bg-kehadiran.jpg);
+  z-index: -1;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
-.rsvp p {
+.kehadiran h2 {
+  font-size: 5rem;
   color: white;
 }
 
-.rsvp form label {
+.kehadiran p {
   color: white;
 }
 
-.rsvp button {
-  background-color: var(--pink);
+.kehadiran form label {
   color: white;
-  border: 1px solid var(--pink);
 }
 
-.rsvp button:hover {
+.kehadiran button {
+  background-color: var(--biru-dongker);
+  color: white;
+  border: 1px solid var(--biru-dongker);
+}
+
+.kehadiran button:hover {
   background-color: white;
-  color: var(--pink);
+  color: var(--biru-dongker);
   border: 1px solid white;
 }
 
 footer {
   padding: 3rem;
-  background-color: var(--pink);
+  background-color: var(--biru-dongker);
   color: white;
 }
 
