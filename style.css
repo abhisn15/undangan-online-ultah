@@ -4,7 +4,6 @@
   --biru-dongker: #131386;
   --bg: #0a0a0a;
   --shadow: 0 2px 2px rgb(0 0 0 / 0.5);
-  overflow-x: hidden;
 }
 
 body {
@@ -525,6 +524,58 @@ footer li {
   }
 
   .peta {
+    width: 340px;
+    height: 300px;
+  }
+}
+
+@media (max-width: 420px) {
+  html {
+    font-size: 60%;
+  }
+
+  main {
+    position: relative;
+    bottom: 20px;
+  }
+
+  main h4,
+  main h1,
+  main p,
+  main a {
+    position: relative;
+    bottom: 30px;
+  }
+
+  main #countdown {
+    font-size: 14px;
+  }
+
+  .simply-countdown > .simply-section {
+    padding: 45px;
+    margin: 3px;
+  }
+
+  .timeline li .timeline-image {
+    width: 80px;
+    height: 80px;
+  }
+
+  .timeline li .timeline-panel {
+    width: 65%;
+    transform: translateX(-20px);
+  }
+
+  .timeline li .timeline-panel::before {
+    top: 30px;
+  }
+
+  .timeline li .timeline-panel::after {
+    top: 31px;
+  }
+
+  .peta {
     width: 200px;
+    height: 200px;
   }
 }
