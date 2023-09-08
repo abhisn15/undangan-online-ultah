@@ -4,6 +4,7 @@
   --biru-dongker: #131386;
   --bg: #0a0a0a;
   --shadow: 0 2px 2px rgb(0 0 0 / 0.5);
+  overflow-x: hidden;
 }
 
 body {
@@ -415,6 +416,9 @@ footer li {
   .home .heart {
     transform: translateX(-50%) translateY(45px);
   }
+  .peta {
+    width: 600px;
+  }
 }
 
 /* laptop */
@@ -458,6 +462,10 @@ footer li {
     border-right-width: 14px;
     left: -13px;
     right: auto;
+  }
+
+  .peta {
+    width: 400px;
   }
 }
 
@@ -514,5 +522,9 @@ footer li {
 
   .timeline li .timeline-panel::after {
     top: 31px;
+  }
+
+  .peta {
+    width: 200px;
   }
 }
